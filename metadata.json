@@ -1,0 +1,6 @@
+{
+  "name": "Talya Martins Revenda",
+  "description": "Sistema completo de gestão para revendedora de cosméticos (O Boticário, Eudora e marcas personalizadas) com catálogo, estoque, pedidos, financeiro, boletos e clientes.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

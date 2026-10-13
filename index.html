@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Talya Martins Revenda</title>
+    <meta name="description" content="Sistema completo de gestão para revendedora de cosméticos (O Boticário, Eudora e marcas personalizadas) com catálogo, estoque, pedidos, financeiro, boletos e clientes." />
+    <meta property="og:title" content="Talya Martins Revenda" />
+    <meta property="og:description" content="Sistema completo de gestão para revendedora de cosméticos (O Boticário, Eudora e marcas personalizadas) com catálogo, estoque, pedidos, financeiro, boletos e clientes." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BeautySalon",
+      "name": "Talya Martins Revenda",
+      "description": "Sistema completo de gestão para revendedora de cosméticos (O Boticário, Eudora e marcas personalizadas).",
+      "url": "https://talyamartinsrevenda.pages.dev",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Brasil",
+        "addressCountry": "BR"
+      }
+    }
+    </script>
+  </head>
+  <body class="bg-[#FAF8FD] text-slate-800 antialiased font-sans">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Sanitização Universal Anti-XSS (mandatório pelo Prompt Mestre)
+      window.escapeHTML = function(str) {
+        if (!str) return '';
+        return str.replace(/[&<>'"]/g, 
+          tag => ({
+              '&': '&amp;',
+              '<': '&lt;',
+              '>': '&gt;',
+              "'": '&#39;',
+              '"': '&quot;'
+            }[tag] || tag)
+        );
+      };
+      window.sanitizeUrl = function(url) {
+        if (!url) return '';
+        if (url.trim().toLowerCase().startsWith('javascript:')) return 'about:blank';
+        return url;
+      };
+    </script>
+  </body>
+</html>
+
